@@ -24,7 +24,7 @@ and answering specific business questions through SQL queries.
   quantity sold, price per unit,
   cost of goods sold (COGS), and total sale amount.
 
-''' SQL
+``` SQL
 
 CREATE TABLE retail_sales
             (
@@ -40,7 +40,7 @@ CREATE TABLE retail_sales
                 cogs	FLOAT,
                 total_sale FLOAT
             ); 
-'''            
+```           
 
 
 
