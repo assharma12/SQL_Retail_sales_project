@@ -103,7 +103,7 @@ or
 total_sale is null  
 
 ```
-### -- Data Analysis & Business Key Problems & Answers
+### 3. Data Analysis & Business Key Problems & Answers
 
 The following SQL queries were developed to answer specific business questions:
 
@@ -113,9 +113,17 @@ The following SQL queries were developed to answer specific business questions:
      from retail_sales 
       where  sale_date = '2022-11-05'
 ```
+```Sql
+2. ** Q.2 Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 10 in the month of Nov-2022:
 
-
-
+ 
+SELECT *
+FROM retail_sales
+WHERE category = 'Clothing'
+  AND quantity >=4
+  AND EXTRACT(YEAR FROM sale_date) = 2022
+  AND EXTRACT(MONTH FROM sale_date) = 11;
+```
 
 
 
