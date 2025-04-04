@@ -19,13 +19,28 @@ and answering specific business questions through SQL queries.
 
 ### 1. Database setup 
 - **Database Creation**:  The project starts by creating a database named 'SQL_Project_p1'.
--**Table Creation**: A table named retail_sales is created to store the sales data.
+-**Table Creation**: A table named 'retail_sales' is created to store the sales data.
   The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category,
   quantity sold, price per unit,
   cost of goods sold (COGS), and total sale amount.
 
+''' SQL
 
-
+CREATE TABLE retail_sales
+            (
+                transaction_id INT PRIMARY KEY,	
+                sale_date DATE,	 
+                sale_time TIME,	
+                customer_id	INT,
+                gender	VARCHAR(15),
+                age	INT,
+                category VARCHAR(15),	
+                quantity	INT,
+                price_per_unit FLOAT,	
+                cogs	FLOAT,
+                total_sale FLOAT
+            ); 
+'''            
 
 
 
