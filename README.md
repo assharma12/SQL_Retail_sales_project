@@ -103,8 +103,16 @@ or
 total_sale is null  
 
 ```
+### -- Data Analysis & Business Key Problems & Answers
 
+The following SQL queries were developed to answer specific business questions:
 
+```sql
+1. ** Q.1 Write a SQL query to retrieve all columns for sales made on '2022-11-05'**:
+ select * 
+     from retail_sales 
+      where  sale_date = '2022-11-05'
+```
 
 
 
